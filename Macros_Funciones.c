@@ -9,7 +9,9 @@
                             printf("fuera de rango\n");\
                             printf("fin\n");} \   
                         
-#define concatenar(x,y)    x##y                                                          
+#define concatenar(x,y)    x##y        
+
+#define MIN(A,B)    (A<B? A:B)
 
 
 int main(){
@@ -21,5 +23,7 @@ int main(){
     printf("El valor de x ahora es: %.2f\n",operacion(x));
     imprimir(x);
     printf("El valor concatenado es: %.d\n",concatenar(2,3));
+
+    printf("El numero menor es: %d",MIN(5,8));
     return 0;
 }
